@@ -1,12 +1,13 @@
-# session-management-nodejs
+# Session Management Nodejs
 In this i am going to explain how to handle Session in ExpressJS 4 and above. Express 3 deprecate many dependencies like ‘bodyParser‘ , ‘logger‘ etc. Our code is written by taking consideration of latest Express JS framework.
 
 #Dependencies 
-  express-session
-  body-parser
-  ejs
+  *express-session
+  *body-parser
+  *ejs
   
 #Package.json
+```json
 {
   "name": "login",
   "version": "1.0.0",
@@ -24,11 +25,15 @@ In this i am going to explain how to handle Session in ExpressJS 4 and above. Ex
   "author": "Sugam Malviya",
   "license": "ISC"
 }
+```
 
 #Run
+```javascript
     npm install
+ ```
 
 #Server.js
+```javascript
 var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
@@ -84,10 +89,10 @@ app.get('/logout',function(req,res){
 app.listen(3000,function(){
 	console.log("listening in 3000 port");
 });
-
+```
 #views/index.html
 
-
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -149,5 +154,5 @@ app.listen(3000,function(){
 	<script src="script.js"></script>
 </body>
 </html>
-
+```
 Thankyou :)
