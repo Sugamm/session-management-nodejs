@@ -2,9 +2,9 @@
 In this i am going to explain how to handle Session in ExpressJS 4 and above. Express 3 deprecate many dependencies like ‘bodyParser‘ , ‘logger‘ etc. Our code is written by taking consideration of latest Express JS framework.
 
 #Dependencies 
-  *express-session
-  *body-parser
-  *ejs
+  1. express-session
+  2. body-parser
+  3. ejs
   
 #Package.json
 ```json
